@@ -1,0 +1,4 @@
+6f87ac57a3e0474ac77b867f067f56fbb92f197efabf3a9994cddae566758251  bin/lpf-reference-linux-x64
+be7d86a2741186ad4256997bab3c3002ffc54bfe3ca4ca52c76e76ed805549e6  bin/lpf-reference-macos-arm64
+4dfb257d9ee6c6ee3732011f98b516868bdce21d2986f480f5e3d78c3fff7890  bin/lpf-reference-macos-x64
+0066338ead8d9931af8c39cb2226dd11c5b799f28ef931a56ed90623e6b50b56  bin/lpf-reference-windows-x64.exe

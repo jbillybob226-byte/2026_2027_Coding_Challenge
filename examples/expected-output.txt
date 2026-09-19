@@ -1,0 +1,83 @@
+Correct implementation example (prebuilt reference)
+This executable does not test your edited challenge source.
+
+Low-pass filter correctness testbench
+[PASS] First call without init
+[PASS] Initialization and repeated reset
+[PASS] Latest alpha on each update
+[PASS] Only init == 1 reseeds
+[PASS] Pass-through maintains state
+[PASS] Invalid alpha clamping (8 values)
+[PASS] Small positive alpha
+[PASS] Constant input
+[PASS] Rising and falling step responses
+[PASS] Impulse decay
+[PASS] Mixed signal reference
+
+Result: 11/11 cases passed; 13452 checks, 0 failures.
+
+Step response: alpha = 0.10, input changes from 0 to 5 at sample 10
+  0  in=  0.000  out=0.00000000
+  1  in=  0.000  out=0.00000000
+  2  in=  0.000  out=0.00000000
+  3  in=  0.000  out=0.00000000
+  4  in=  0.000  out=0.00000000
+  5  in=  0.000  out=0.00000000
+  6  in=  0.000  out=0.00000000
+  7  in=  0.000  out=0.00000000
+  8  in=  0.000  out=0.00000000
+  9  in=  0.000  out=0.00000000
+ 10  in=  5.000  out=0.50000000
+ 11  in=  5.000  out=0.94999999
+ 12  in=  5.000  out=1.35500002
+ 13  in=  5.000  out=1.71949995
+ 14  in=  5.000  out=2.04754996
+ 15  in=  5.000  out=2.34279490
+ 16  in=  5.000  out=2.60851526
+ 17  in=  5.000  out=2.84766364
+ 18  in=  5.000  out=3.06289721
+ 19  in=  5.000  out=3.25660729
+ 20  in=  5.000  out=3.43094659
+ 21  in=  5.000  out=3.58785176
+ 22  in=  5.000  out=3.72906661
+ 23  in=  5.000  out=3.85615993
+ 24  in=  5.000  out=3.97054386
+ 25  in=  5.000  out=4.07348919
+ 26  in=  5.000  out=4.16614008
+ 27  in=  5.000  out=4.24952602
+ 28  in=  5.000  out=4.32457352
+ 29  in=  5.000  out=4.39211607
+ 30  in=  5.000  out=4.45290470
+ 31  in=  5.000  out=4.50761414
+ 32  in=  5.000  out=4.55685282
+ 33  in=  5.000  out=4.60116720
+ 34  in=  5.000  out=4.64105034
+ 35  in=  5.000  out=4.67694521
+ 36  in=  5.000  out=4.70925045
+ 37  in=  5.000  out=4.73832512
+ 38  in=  5.000  out=4.76449251
+ 39  in=  5.000  out=4.78804302
+ 40  in=  5.000  out=4.80923843
+ 41  in=  5.000  out=4.82831430
+ 42  in=  5.000  out=4.84548283
+ 43  in=  5.000  out=4.86093426
+ 44  in=  5.000  out=4.87484074
+ 45  in=  5.000  out=4.88735676
+ 46  in=  5.000  out=4.89862108
+ 47  in=  5.000  out=4.90875864
+ 48  in=  5.000  out=4.91788244
+ 49  in=  5.000  out=4.92609406
+ 50  in=  5.000  out=4.93348455
+ 51  in=  5.000  out=4.94013596
+ 52  in=  5.000  out=4.94612217
+ 53  in=  5.000  out=4.95150995
+ 54  in=  5.000  out=4.95635891
+ 55  in=  5.000  out=4.96072292
+ 56  in=  5.000  out=4.96465063
+ 57  in=  5.000  out=4.96818542
+ 58  in=  5.000  out=4.97136688
+ 59  in=  5.000  out=4.97423029
+ 60  in=  5.000  out=4.97680712
+ 61  in=  5.000  out=4.97912645
+ 62  in=  5.000  out=4.98121357
+ 63  in=  5.000  out=4.98309231
