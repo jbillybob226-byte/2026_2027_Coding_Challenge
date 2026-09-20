@@ -32,11 +32,29 @@
 
 fp32 low_pass_filter(fp32 x, fp32 alpha, int init)
 {
-    /* =============================
-     *  Put your implementation here
-     * ============================= */
-
-     return 0.0f; /* Placeholder: implement the filter to pass the tests. */
+    static bool initialized = false;
+    static fp32 lastAlpha;
+    static fp32 lastOutPut;
+    fp32 result;
+    if (!initialized || init ==1)
+    {
+        lastAlpha = alpha;
+        lastOutPut = x;
+        result = lastOutPut;
+        initialized = true;
+    }
+    else
+    {
+        if (alpha <= 0 || alpha > 1)
+        {
+            alpha = 1.0f;
+            lastAlpha = alpha;
+        }
+        result = (1-alpha)*lastOutPut + alpha*x;
+        lastAlpha = alpha;
+        lastOutPut = result;
+    }
+     return result;
 }
 
 
